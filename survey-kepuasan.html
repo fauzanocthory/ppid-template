@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -13,9 +12,9 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
       rel="stylesheet"
     />
 
@@ -48,7 +47,12 @@
   ======================================================== -->
   </head>
 
-  <body class="index-page">
+  <body
+    class="index-page"
+    data-aos-easing="ease-in-out"
+    data-aos-duration="600"
+    data-aos-delay="0"
+  >
     <header id="header" class="header d-flex align-items-center fixed-top">
       <div
         class="container position-relative d-flex align-items-center justify-content-between"
@@ -59,8 +63,24 @@
         >
           <!-- Uncomment the line below if you also wish to use an image logo -->
           <!-- <img src="assets/img/logo.webp" alt=""> -->
+          <img
+            src="/assets/img/logo_ppid_riau.png"
+            class="img-fluid mb-2"
+            alt=""
+          />
           <h1 class="sitename">
-            <img src="/assets/img/logo_ppid_riau.png" alt="" />
+            <div class="row">
+              <div>
+                <h4>
+                  <strong>PPID</strong>
+                </h4>
+              </div>
+              <div>
+                <p class="text-white" style="font-size: 0.5rem">
+                  Kementerian Agama Riau
+                </p>
+              </div>
+            </div>
           </h1>
         </a>
 
@@ -75,8 +95,8 @@
               <ul>
                 <li><a href="#">Profil PPID</a></li>
                 <li><a href="#">Profil Pejabat</a></li>
-                <li><a href="#">Visi, Misi & Moto PPID</a></li>
-                <li><a href="#">Tugas, Fungsi & Wewenang PPID</a></li>
+                <li><a href="#">Visi, Misi &amp; Moto PPID</a></li>
+                <li><a href="#">Tugas, Fungsi &amp; Wewenang PPID</a></li>
                 <li><a href="#">Struktur Organisasi PPID</a></li>
               </ul>
             </li>
@@ -127,15 +147,18 @@
 
     <main class="main">
       <!-- Page Title -->
-      <div class="page-title dark-background" data-aos="fade">
+      <div
+        class="page-title dark-background aos-init aos-animate"
+        data-aos="fade"
+      >
         <div class="heading">
           <div class="container">
             <div class="row d-flex justify-content-center text-center">
               <div class="col-lg-8">
-                <h1>Survey Kepuasan Masyarakat</h1>
+                <h1>Permohonan Informasi</h1>
                 <p class="mb-0">
-                  Pada halaman ini anda dapat menilai kepuasan anda terhadap
-                  layanan yang kami berikan.
+                  Pada halaman ini anda dapat mengajukan permohonan informasi
+                  yang ingin anda tuju.
                 </p>
               </div>
             </div>
@@ -145,41 +168,260 @@
           <div class="container">
             <ol>
               <li><a href="index.html">Beranda</a></li>
-              <li class="current">Survey Kepuasan Masyarakat</li>
+              <li class="current">Permohonan Informasi</li>
             </ol>
           </div>
         </nav>
       </div>
       <!-- End Page Title -->
 
-      <!-- Starter Section Section -->
-      <section id="starter-section" class="starter-section section">
+      <!-- Consultation Section -->
+      <section id="consultation" class="consultation section light-background">
         <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Starter Section</h2>
+        <div
+          class="container section-title aos-init aos-animate"
+          data-aos="fade-up"
+        >
+          <h2>Formulir Permintaan Informasi</h2>
           <div>
-            <span>Check Our</span>
-            <span class="description-title">Starter Section</span>
+            <span>Masukkan Data&nbsp;</span>
+            <span class="description-title">Anda</span>
           </div>
         </div>
         <!-- End Section Title -->
 
-        <div class="container" data-aos="fade-up">
-          <p>Use this page as a starter for your own custom pages.</p>
+        <div
+          class="container aos-init aos-animate"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <div class="cta-wrapper">
+            <div class="row align-items-center">
+              <div
+                class="row aos-init aos-animate"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <div class="cta-content">
+                  <div class="cta-form">
+                    <h3 class="text-center">Masukkan Data Anda</h3>
+                    <p class="text-center">
+                      Mohon masukkan semua data anda dengan benar.
+                    </p>
+                    <form
+                      action="forms/consultation.php"
+                      method="post"
+                      class="php-email-form"
+                    >
+                      <div class="row">
+                        <div class="form-group">
+                          <input
+                            type="text"
+                            name="name"
+                            class="form-control"
+                            placeholder="Nama Pemohon Informasi"
+                            required=""
+                          />
+                        </div>
+                        <div class="form-group mt-3">
+                          <input
+                            type="email"
+                            class="form-control"
+                            name="email"
+                            placeholder="Nomor KTP (sesuai KTP)"
+                            required=""
+                          />
+                        </div>
+                        <div class="form-group mt-3">
+                          <input
+                            type="email"
+                            class="form-control"
+                            name="email"
+                            placeholder="Alamat Pemohon Informasi"
+                            required=""
+                          />
+                        </div>
+                        <div class="form-group mt-3">
+                          <input
+                            type="text"
+                            class="form-control"
+                            name="phone"
+                            placeholder="Nomor Telepon"
+                          />
+                        </div>
+                        <div class="form-group mt-3">
+                          <input
+                            type="email"
+                            class="form-control"
+                            name="phone"
+                            placeholder="Email Pemohon"
+                          />
+                        </div>
+                        <div class="form-group mt-3">
+                          <textarea
+                            class="form-control"
+                            name="phone"
+                            placeholder="Informasi yang anda butuhkan"
+                          ></textarea>
+                        </div>
+                        <div class="form-group mt-3">
+                          <textarea
+                            class="form-control"
+                            name="phone"
+                            placeholder=" Alasan Permintaan Informasi"
+                          ></textarea>
+                        </div>
+                        <div class="form-group mt-3">
+                          <textarea
+                            type="text"
+                            class="form-control"
+                            name="phone"
+                            placeholder="Alasan Penggunaan Informasi"
+                          ></textarea>
+                        </div>
+                        <div class="form-group mt-3">
+                          <select
+                            class="form-control"
+                            name="service"
+                            required=""
+                          >
+                            <option value="" disabled="" selected="">
+                              Format Bahan Informasi
+                            </option>
+                            <option value="Strategic Planning">Tercetak</option>
+                            <option value="Business Transformation">
+                              Terekam
+                            </option>
+                          </select>
+                        </div>
+
+                        <div class="form-group mt-3">
+                          <input
+                            type="text"
+                            name="name"
+                            class="form-control"
+                            placeholder="Nama Penggunan Informasi"
+                            required=""
+                          />
+                        </div>
+                        <div class="form-group mt-3">
+                          <input
+                            type="email"
+                            class="form-control"
+                            name="email"
+                            placeholder="Nomor KTP (sesuai KTP)"
+                            required=""
+                          />
+                        </div>
+                        <div class="form-group mt-3">
+                          <input
+                            type="email"
+                            class="form-control"
+                            name="email"
+                            placeholder="Alamat Penggunan Informasi"
+                            required=""
+                          />
+                        </div>
+                        <div class="form-group mt-3">
+                          <input
+                            type="text"
+                            class="form-control"
+                            name="phone"
+                            placeholder="Nomor Telepon"
+                          />
+                        </div>
+                        <div class="form-group mt-3">
+                          <input
+                            type="email"
+                            class="form-control"
+                            name="phone"
+                            placeholder="Email"
+                          />
+                        </div>
+                        <div class="form-group mt-3">
+                          <input
+                            type="text"
+                            class="form-control"
+                            name="phone"
+                            placeholder="Waktu"
+                          />
+                        </div>
+                        <div class="form-group mt-3">
+                          <input
+                            class="form-control"
+                            type="file"
+                            id="formFile"
+                            placeholder="Foto KTP"
+                          />
+                        </div>
+
+                        <div class="form-group mt-3">
+                          <select
+                            class="form-control"
+                            name="service"
+                            required=""
+                          >
+                            <option value="" disabled="" selected="">
+                              Cara Memperoleh Informasi
+                            </option>
+                            <option value="Strategic Planning">Langsung</option>
+                            <option value="Business Transformation">
+                              Website
+                            </option>
+                            <option value="Financial Advisory">Email</option>
+                            <option value="Human Resources">Fax</option>
+                          </select>
+                        </div>
+
+                        <div class="form-group mt-3">
+                          <select
+                            class="form-control"
+                            name="service"
+                            required=""
+                          >
+                            <option value="" disabled="" selected="">
+                              Cara Mengirim Bahan Informasi
+                            </option>
+                            <option value="Strategic Planning">Langsung</option>
+                            <option value="Business Transformation">
+                              Via Pos
+                            </option>
+                            <option value="Financial Advisory">Email</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="my-3">
+                        <div class="loading">Loading</div>
+                        <div class="error-message"></div>
+                        <div class="sent-message">
+                          Your message has been sent. Thank you!
+                        </div>
+                      </div>
+
+                      <div class="text-center">
+                        <button type="submit">Kirim</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-      <!-- /Starter Section Section -->
+      <!-- /Service Details Section -->
     </main>
 
     <footer id="footer" class="footer light-background">
-      <div class="container">
+      <div class="container mx-auto" style="width: 100%">
         <div class="row gy-3">
           <div class="col-lg-3 col-md-6 d-flex">
             <i class="bi bi-geo-alt icon"></i>
             <div class="address">
-              <h4>Address</h4>
-              <p>A108 Adam Street</p>
-              <p>New York, NY 535022</p>
+              <h4>Alamat</h4>
+              <p>Jl. Sudirman No. 235</p>
+              <p>Pekanbaru, Riau 535022</p>
               <p></p>
             </div>
           </div>
@@ -187,10 +429,11 @@
           <div class="col-lg-3 col-md-6 d-flex">
             <i class="bi bi-telephone icon"></i>
             <div>
-              <h4>Contact</h4>
+              <h4>Kontak</h4>
               <p>
-                <strong>Phone:</strong> <span>+1 5589 55488 55</span><br />
-                <strong>Email:</strong> <span>info@example.com</span><br />
+                <strong>Telepon:</strong> <span>(0761) 861827</span><br />
+                <strong>Email:</strong> <span>riau.kemenag@kemenag.co.id</span
+                ><br />
               </p>
             </div>
           </div>
@@ -198,16 +441,17 @@
           <div class="col-lg-3 col-md-6 d-flex">
             <i class="bi bi-clock icon"></i>
             <div>
-              <h4>Opening Hours</h4>
+              <h4>Buka Dari Jam</h4>
               <p>
-                <strong>Mon-Sat:</strong> <span>11AM - 23PM</span><br />
-                <strong>Sunday</strong>: <span>Closed</span>
+                <strong>Senin-Jumat:</strong> <span>07:30 Wib - 16:00 Wib</span
+                ><br />
+                <strong>Sabtu &amp; Minggu</strong>: <span>Tutup</span>
               </p>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6">
-            <h4>Follow Us</h4>
+            <h4>Sosial Media</h4>
             <div class="social-links d-flex">
               <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
               <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
@@ -221,16 +465,15 @@
       <div class="container copyright text-center mt-4">
         <p>
           © <span>Copyright</span>
-          <strong class="px-1 sitename">Consulting.</strong>
-          <span>All Rights Reserved</span>
+          <strong class="px-1 sitename">Riau Kanwil Kemenag.</strong>
         </p>
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you've purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-        </div>
+        <!-- <div class="credits"> -->
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div> -->
       </div>
     </footer>
 
@@ -243,7 +486,6 @@
     ></a>
 
     <!-- Preloader -->
-    <div id="preloader"></div>
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

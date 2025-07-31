@@ -121,7 +121,7 @@
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
 
-        <a class="btn-getstarted" href="#consultation">Login</a>
+        <a class="btn-getstarted" href="/login.html">Login</a>
       </div>
     </header>
 
@@ -141,10 +141,10 @@
                   informasi publik di Kementerian Agama.
                 </p>
                 <div class="hero-btns">
-                  <a href="/permohonan-informasi.html" class="btn btn-primary"
+                  <a href="#consultation1" class="btn btn-primary"
                     >Daftarkan Permohonan Informasi</a
                   >
-                  <a href="/survey-kepuasan.html" class="btn btn-outline"
+                  <a href="#consultation2" class="btn btn-outline"
                     >Survei Kepuasan Masyarakat</a
                   >
                 </div>
@@ -427,136 +427,729 @@
       </section>
       <!-- /Services Section -->
 
-      <!-- Contact Section -->
-      <section id="contact" class="contact section">
+      <!-- Permintaan Informasi Section -->
+      <section id="consultation1" class="consultation section light-background">
         <!-- Section Title -->
-        <div class="container section-title">
-          <h2>Contact</h2>
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Permintaan Informasi</h2>
           <div>
-            <span>Contact</span> <span class="description-title">Us</span>
+            <span>Formulir Permintaan&nbsp;</span>
+            <span class="description-title">Informasi</span>
           </div>
         </div>
         <!-- End Section Title -->
 
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-5">
-              <div class="contact-info">
-                <div class="contact-card">
-                  <h3>Contact Information</h3>
-                  <p>
-                    Feel free to reach out with any questions about the book,
-                    speaking engagements, or media inquiries.
-                  </p>
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="cta-wrapper">
+            <div class="row align-items-center">
+              <div class="row" data-aos="fade-up" data-aos-delay="200">
+                <div class="cta-content">
+                  <div class="cta-form p-2">
+                    <h3 class="text-center">Masukkan Data Anda</h3>
+                    <p class="text-center">
+                      Mohon masukkan semua data anda dengan benar.
+                    </p>
+                    <form
+                      action="forms/consultation.php"
+                      method="post"
+                      class="php-email-form"
+                    >
+                      <div class="row">
+                        <div class="form-group">
+                          <input
+                            type="text"
+                            name="nama_pemohon"
+                            class="form-control"
+                            placeholder="Nama Pemohon Informasi"
+                            required=""
+                          />
+                        </div>
+                        <div class="form-group mt-3">
+                          <input
+                            type="number"
+                            class="form-control"
+                            name="nik_pemohon"
+                            placeholder="Nomor KTP (sesuai KTP)"
+                            required=""
+                          />
+                        </div>
+                        <div class="form-group mt-3">
+                          <input
+                            type="text"
+                            class="form-control"
+                            name="alamat_pemohon"
+                            placeholder="Alamat Pemohon Informasi"
+                            required=""
+                          />
+                        </div>
+                        <div class="form-group mt-3">
+                          <input
+                            type="number"
+                            class="form-control"
+                            name="no_hp_pemohon"
+                            placeholder="Nomor Telepon"
+                          />
+                        </div>
+                        <div class="form-group mt-3">
+                          <input
+                            type="email"
+                            class="form-control"
+                            name="email_pemohon"
+                            placeholder="Email Pemohon"
+                          />
+                        </div>
+                        <div class="form-group mt-3">
+                          <textarea
+                            class="form-control"
+                            name="informasi_yg_dibutuhkan"
+                            placeholder="Informasi yang anda butuhkan"
+                          ></textarea>
+                        </div>
+                        <div class="form-group mt-3">
+                          <textarea
+                            class="form-control"
+                            name="alasan_permintaan_informasi"
+                            placeholder=" Alasan Permintaan Informasi"
+                          ></textarea>
+                        </div>
+                        <div class="form-group mt-3">
+                          <textarea
+                            type="text"
+                            class="form-control"
+                            name="alasan_penggunaan_informasi"
+                            placeholder="Alasan Penggunaan Informasi"
+                          ></textarea>
+                        </div>
 
-                  <div class="contact-details">
-                    <div class="contact-item">
-                      <i class="bi bi-envelope"></i>
-                      <div>
-                        <h4>Email:</h4>
-                        <p>author@example.com</p>
+                        <div class="form-group mt-3">
+                          <input
+                            type="text"
+                            name="nama_pengguna_informasi"
+                            class="form-control"
+                            placeholder="Nama Penggunan Informasi"
+                            required=""
+                          />
+                        </div>
+                        <div class="form-group mt-3">
+                          <input
+                            type="number"
+                            class="form-control"
+                            name="nik_pengguna_informasi"
+                            placeholder="Nomor KTP (sesuai KTP)"
+                            required=""
+                          />
+                        </div>
+                        <div class="form-group mt-3">
+                          <input
+                            type="text"
+                            class="form-control"
+                            name="alamat_pengguna_informasi"
+                            placeholder="Alamat Penggunan Informasi"
+                            required=""
+                          />
+                        </div>
+                        <div class="form-group mt-3">
+                          <input
+                            type="text"
+                            class="form-control"
+                            name="no_hp_pengguna_informasi"
+                            placeholder="Nomor Telepon"
+                          />
+                        </div>
+                        <div class="form-group mt-3">
+                          <input
+                            type="email"
+                            class="form-control"
+                            name="email_pengguna_informasi"
+                            placeholder="Email"
+                          />
+                        </div>
+                        <div class="form-group mt-3">
+                          <input
+                            type="text"
+                            class="form-control"
+                            name="waktu"
+                            placeholder="Waktu"
+                          />
+                        </div>
+                        
+                        <div class="form-group mt-3">
+                          <select
+                            class="form-control"
+                            name="cara_memperoleh_informasi"
+                            required=""
+                          >
+                            <option value="" disabled="" selected="">
+                              Cara Memperoleh Informasi
+                            </option>
+                            <option value="langsung">Langsung</option>
+                            <option value="website">
+                              Website
+                            </option>
+                            <option value="email">Email</option>
+                            <option value="fax">Fax</option>
+                          </select>
+                        </div>
+                        <div class="form-group mt-3">
+                          <select
+                            class="form-control"
+                            name="format_bahan_informasi"
+                            required=""
+                          >
+                            <option value="" disabled="" selected="">
+                              Format Bahan Informasi
+                            </option>
+                            <option value="tercetak">Tercetak</option>
+                            <option value="terekam">
+                              Terekam
+                            </option>
+                          </select>
+                        </div>
+
+                        <div class="form-group mt-3">
+                          <select
+                            class="form-control"
+                            name="cara_mengirim_bahan_informasi"
+                            required=""
+                          >
+                            <option value="" disabled="" selected="">
+                              Cara Mengirim Bahan Informasi
+                            </option>
+                            <option value="langsung">Langsung</option>
+                            <option value="via_pos">
+                              Via Pos
+                            </option>
+                            <option value="email">Email</option>
+                          </select>
+                        </div>
                       </div>
-                    </div>
 
-                    <div class="contact-item">
-                      <i class="bi bi-telephone"></i>
-                      <div>
-                        <h4>Phone:</h4>
-                        <p>+1 (555) 123-4567</p>
+                      <div class="form-group mt-3">
+                          <h7>Upload Foto KTP Pemohon</h7>
+                          <input
+                            class="form-control"
+                            type="file"
+                            id="foto_ktp_pemohon"
+                            placeholder="Foto KTP"
+                          />
+                        </div>
+                        <div class="form-group mt-3">
+                          <h7>Upload Foto Akta Notaris Lembaga</h7>
+                          <input
+                            class="form-control"
+                            type="file"
+                            id="foto_ktp_akta_notaris_lembaga"
+                            placeholder="Foto KTP"
+                          />
+                        </div>
+
+                      <div class="my-3">
+                        <div class="loading">Loading</div>
+                        <div class="error-message"></div>
+                        <div class="sent-message">
+                          Your message has been sent. Thank you!
+                        </div>
                       </div>
-                    </div>
 
-                    <div class="contact-item">
-                      <i class="bi bi-geo-alt"></i>
-                      <div>
-                        <h4>Address:</h4>
-                        <p>123 Book Street, Literary Lane</p>
-                        <p>Wordsmith City, NY 10001</p>
+                      <div class="text-center">
+                        <button type="submit">Kirim</button>
                       </div>
-                    </div>
-                  </div>
-
-                  <div class="social-links">
-                    <a href="#"><i class="bi bi-twitter"></i></a>
-                    <a href="#"><i class="bi bi-facebook"></i></a>
-                    <a href="#"><i class="bi bi-instagram"></i></a>
-                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </form>
                   </div>
                 </div>
-              </div>
-            </div>
-
-            <div class="col-lg-7">
-              <div class="contact-form-wrapper">
-                <form
-                  action="forms/contact.php"
-                  method="post"
-                  class="php-email-form"
-                >
-                  <div class="row">
-                    <div class="col-md-6 form-group">
-                      <label for="name">Your Name</label>
-                      <input
-                        type="text"
-                        name="name"
-                        class="form-control"
-                        id="name"
-                        placeholder="John Doe"
-                        required=""
-                      />
-                    </div>
-                    <div class="col-md-6 form-group mt-3 mt-md-0">
-                      <label for="email">Your Email</label>
-                      <input
-                        type="email"
-                        class="form-control"
-                        name="email"
-                        id="email"
-                        placeholder="john@example.com"
-                        required=""
-                      />
-                    </div>
-                  </div>
-                  <div class="form-group mt-3">
-                    <label for="subject">Subject</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      name="subject"
-                      id="subject"
-                      placeholder="I loved your book!"
-                      required=""
-                    />
-                  </div>
-                  <div class="form-group mt-3">
-                    <label for="message">Message</label>
-                    <textarea
-                      class="form-control"
-                      name="message"
-                      rows="7"
-                      placeholder="Your message here..."
-                      required=""
-                    ></textarea>
-                  </div>
-
-                  <div class="my-3">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">
-                      Your message has been sent. Thank you!
-                    </div>
-                  </div>
-
-                  <div class="text-center">
-                    <button type="submit">Send Message</button>
-                  </div>
-                </form>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- /Contact Section -->
+      <!-- /Permintaan Informasi Section -->
+
+
+      <!-- Survey Kepuasan Masyarakat Informasi Section -->
+      <section id="consultation2" class="consultation section light-background bg-white">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Survey Kepuasan Masyarakat</h2>
+          <div>
+            <span>Formulir Survey Kepuasan&nbsp;</span>
+            <span class="description-title">Masyarakat</span>
+          </div>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="cta-wrapper">
+            <div class="row align-items-center">
+              <div class="row" data-aos="fade-up" data-aos-delay="200">
+                <div class="cta-content">
+                  <div class="cta-form">
+                    <div class="progress">
+                      <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="50" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 0%"></div>
+                    </div>
+                    <h3 class="text-center">Mohon Isi Dengan Jujur</h3>
+         
+                    <!-- CONTAINER -->
+                    <div class="container align-items-center p-3">
+                      <div class="row g-0 justify-content-center">
+                          <!-- TITLE -->
+                        
+                          <!-- FORMS -->
+                          <div class="col-lg-20 mx-0 px-0">
+                            <div id="" class="">
+                                <form class="needs-validation" id="form-wrapper" method="post" name="form-wrapper" novalidate>
+                                  <!-- STEPS HERE -->
+                                    <div id="steps-container">
+                                      <div class="step">
+                                        <div class="mt-1">
+                                            <label class="form-label">Nama Lengkap :</label> 
+                                            <input class="form-control" id="nama_lengkap" name="nama_lengkap" type="text" placeholder="Nama Lengkap" required>
+                                        </div>
+                                        <div class="row mt-2">
+                                            <div class="col-lg-2 col-md-2 col-3">
+                                              <label class="form-label">Usia :</label>
+                                              <div class="input-container">
+                                                  <input class="form-control" id="usia" name="usia" type="number" min="0" max="120" placeholder="17 Tahun" required>
+                                              </div>
+                                            </div>
+                                            <div class="pt-2">
+                                              <label class="form-label">Pekerjaan :</label>
+                                              <div class="input-container">
+                                                  <input class="form-control" id="pekerjaan" name="pekerjaan" type="text" placeholder="Pekerjaan" required>
+                                              </div>
+                                            </div>
+                                            <div class="col-lg-8 pt-2">
+                                              <label class="form-label">Jenis Kelamin :</label>
+                                              <br >
+                                              <div id="input-container">
+                                                  <input class="form-check-input" name="jenis_kelamin" type="radio" value="laki_laki" required> 
+                                                  <label class="form-check-label radio-lb">Laki-Laki</label> 
+                                                  <input class="form-check-input" name="jenis_kelamin" type="radio" value="Perempuan" required> 
+                                                  <label class="form-check-label radio-lb">Perempuan</label> 
+                                              </div>
+                                            </div>
+                                            
+                                        </div>
+                                      </div>
+                                      <div class="step">
+                                        <h4>Silahkan Bapak/Ibu/Saudara/i dapat mengisi kuesioner ini sesuai kepuasan Bapak/Ibu/Saudara/i
+                                            Keterangan:
+                                            <br>
+                                            <br>
+                                            1 : Tidak Setuju
+                                            <br>
+                                            2 : Kurang Setuju
+                                            <br>
+                                            3 : Setuju
+                                            <br>
+                                            4 : Sangat Setuju
+                                        </h4>
+                                      </div>
+                                      <div class="step">
+                                        <h4>Prosedur pelayanan informasi publik di Kementerian Agama RI mudah dan sesuai dengan aturan?</h4>
+                                        <div class="form-check ps-0 q-box">
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_1_1" name="q_1" type="radio" value="1"> 
+                                              <label class="form-check-label question__label" for="q_1_1">1</label>
+                                            </div>
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_1_2" name="q_1" type="radio" value="2"> 
+                                              <label class="form-check-label question__label" for="q_1_2">2</label>
+                                            </div>
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_1_3" name="q_1" type="radio" value="3"> 
+                                              <label class="form-check-label question__label" for="q_1_3">3</label>
+                                            </div>
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_1_4" name="q_1" type="radio" value="4"> 
+                                              <label class="form-check-label question__label" for="q_1_4">4</label>
+                                            </div>
+                                        </div>
+                                      </div>
+                                       <div class="step">
+                                        <h4>Persyaratan teknis dan administratif yang ditetapkan Kementerian Agama RI sudah sesuai untuk memenuhi layanannya?</h4>
+                                        <div class="form-check ps-0 q-box">
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_2_1" name="q_2" type="radio" value="1"> 
+                                              <label class="form-check-label question__label" for="q_2_1">1</label>
+                                            </div>
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_2_2" name="q_2" type="radio" value="2"> 
+                                              <label class="form-check-label question__label" for="q_2_2">2</label>
+                                            </div>
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_2_3" name="q_2" type="radio" value="3"> 
+                                              <label class="form-check-label question__label" for="q_2_3">3</label>
+                                            </div>
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_2_4" name="q_2" type="radio" value="4"> 
+                                              <label class="form-check-label question__label" for="q_2_4">4</label>
+                                            </div>
+                                        </div>
+                                      </div>
+                                       <div class="step">
+                                        <h4>Kementerian Agama RI memiliki kejelasan alur layanan informasi publik yang sesuai dengan aturan?</h4>
+                                        <div class="form-check ps-0 q-box">
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_3_1" name="q_3" type="radio" value="1"> 
+                                              <label class="form-check-label question__label" for="q_3_1">1</label>
+                                            </div>
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_3_2" name="q_3" type="radio" value="2"> 
+                                              <label class="form-check-label question__label" for="q_3_2">2</label>
+                                            </div>
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_3_3" name="q_3" type="radio" value="3"> 
+                                              <label class="form-check-label question__label" for="q_3_3">3</label>
+                                            </div>
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_3_4" name="q_3" type="radio" value="4"> 
+                                              <label class="form-check-label question__label" for="q_3_4">4</label>
+                                            </div>
+                                        </div>
+                                      </div>
+                                       <div class="step">
+                                        <h4>Petugas pemberi layanan informasi publik di Kementerian Agama RI selalu disiplin dalam melaksanakan tugas-tugas mereka?</h4>
+                                        <div class="form-check ps-0 q-box">
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_4_1" name="q_4" type="radio" value="1"> 
+                                              <label class="form-check-label question__label" for="q_4_1">1</label>
+                                            </div>
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_4_2" name="q_4" type="radio" value="2"> 
+                                              <label class="form-check-label question__label" for="q_4_2">2</label>
+                                            </div>
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_4_3" name="q_4" type="radio" value="3"> 
+                                              <label class="form-check-label question__label" for="q_4_3">3</label>
+                                            </div>
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_4_4" name="q_4" type="radio" value="4"> 
+                                              <label class="form-check-label question__label" for="q_4_4">4</label>
+                                            </div>
+                                        </div>
+                                      </div>
+                                       <div class="step">
+                                        <h4>Pelayanan informasi publik yang diberikan oleh Kementerian Agama RI telah sesuai dengan standar ketentuan yang berlaku?</h4>
+                                        <div class="form-check ps-0 q-box">
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_5_1" name="q_5" type="radio" value="1"> 
+                                              <label class="form-check-label question__label" for="q_5_1">1</label>
+                                            </div>
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_5_2" name="q_5" type="radio" value="2"> 
+                                              <label class="form-check-label question__label" for="q_5_2">2</label>
+                                            </div>
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_5_3" name="q_5" type="radio" value="3"> 
+                                              <label class="form-check-label question__label" for="q_5_3">3</label>
+                                            </div>
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_5_4" name="q_5" type="radio" value="4"> 
+                                              <label class="form-check-label question__label" for="q_5_4">4</label>
+                                            </div>
+                                        </div>
+                                      </div>
+                                       <div class="step">
+                                        <h4>Petugas pemberi layanan informasi publik Kementerian Agama RI memiliki kompetensi yang baik dalam hal pengetahuan, keahlian, keterampilan, dan pengalaman?</h4>
+                                        <div class="form-check ps-0 q-box">
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_6_1" name="q_6" type="radio" value="1"> 
+                                              <label class="form-check-label question__label" for="q_6_1">1</label>
+                                            </div>
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_6_2" name="q_6" type="radio" value="2"> 
+                                              <label class="form-check-label question__label" for="q_6_2">2</label>
+                                            </div>
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_6_3" name="q_6" type="radio" value="3"> 
+                                              <label class="form-check-label question__label" for="q_6_3">3</label>
+                                            </div>
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_6_4" name="q_6" type="radio" value="4"> 
+                                              <label class="form-check-label question__label" for="q_6_4">4</label>
+                                            </div>
+                                        </div>
+                                      </div>
+                                       <div class="step">
+                                        <h4>Kementerian Agama RI memberikan pelayanan informasi publik yang cepat?</h4>
+                                        <div class="form-check ps-0 q-box">
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_7_1" name="q_7" type="radio" value="1"> 
+                                              <label class="form-check-label question__label" for="q_7_1">1</label>
+                                            </div>
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_7_2" name="q_7" type="radio" value="2"> 
+                                              <label class="form-check-label question__label" for="q_7_2">2</label>
+                                            </div>
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_7_3" name="q_7" type="radio" value="3"> 
+                                              <label class="form-check-label question__label" for="q_7_3">3</label>
+                                            </div>
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_7_4" name="q_7" type="radio" value="4"> 
+                                              <label class="form-check-label question__label" for="q_7_4">4</label>
+                                            </div>
+                                        </div>
+                                      </div>
+                                       <div class="step">
+                                        <h4>Kementerian Agama RI mmemberikan pelayanan informasi publik yang adil kepada semua pihak yang datang?</h4>
+                                        <div class="form-check ps-0 q-box">
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_8_1" name="q_8" type="radio" value="1"> 
+                                              <label class="form-check-label question__label" for="q_8_1">1</label>
+                                            </div>
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_8_2" name="q_8" type="radio" value="2"> 
+                                              <label class="form-check-label question__label" for="q_8_2">2</label>
+                                            </div>
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_8_3" name="q_8" type="radio" value="3"> 
+                                              <label class="form-check-label question__label" for="q_8_3">3</label>
+                                            </div>
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_8_4" name="q_8" type="radio" value="4"> 
+                                              <label class="form-check-label question__label" for="q_8_4">4</label>
+                                            </div>
+                                        </div>
+                                      </div>
+                                       <div class="step">
+                                        <h4>Petugas pemberi layanan informasi publik di Kementerian Agama RI memberikan layanan dengan sopan, ramah dan responsif?</h4>
+                                        <div class="form-check ps-0 q-box">
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_9_1" name="q_9" type="radio" value="1"> 
+                                              <label class="form-check-label question__label" for="q_9_1">1</label>
+                                            </div>
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_9_2" name="q_9" type="radio" value="2"> 
+                                              <label class="form-check-label question__label" for="q_9_2">2</label>
+                                            </div>
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_9_3" name="q_9" type="radio" value="3"> 
+                                              <label class="form-check-label question__label" for="q_9_3">3</label>
+                                            </div>
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_9_4" name="q_9" type="radio" value="4"> 
+                                              <label class="form-check-label question__label" for="q_9_4">4</label>
+                                            </div>
+                                        </div>
+                                      </div>
+                                       <div class="step">
+                                        <h4>Kementerian Agama RI menerapkan biaya yang wajar atas layanannya?</h4>
+                                        <div class="form-check ps-0 q-box">
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_10_1" name="q_10" type="radio" value="1"> 
+                                              <label class="form-check-label question__label" for="q_10_1">1</label>
+                                            </div>
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_10_2" name="q_10" type="radio" value="2"> 
+                                              <label class="form-check-label question__label" for="q_10_2">2</label>
+                                            </div>
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_10_3" name="q_10" type="radio" value="3"> 
+                                              <label class="form-check-label question__label" for="q_10_3">3</label>
+                                            </div>
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_10_4" name="q_10" type="radio" value="4"> 
+                                              <label class="form-check-label question__label" for="q_10_4">4</label>
+                                            </div>
+                                        </div>
+                                      </div>
+                                       <div class="step">
+                                        <h4>Penerapan biaya layanan informasi publik oleh Kementerian Agama RI adalah pasti dan sesuai dengan aturan yang berlaku?</h4>
+                                        <div class="form-check ps-0 q-box">
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_11_1" name="q_11" type="radio" value="1"> 
+                                              <label class="form-check-label question__label" for="q_11_1">1</label>
+                                            </div>
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_11_2" name="q_11" type="radio" value="2"> 
+                                              <label class="form-check-label question__label" for="q_11_2">2</label>
+                                            </div>
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_11_3" name="q_11" type="radio" value="3"> 
+                                              <label class="form-check-label question__label" for="q_11_3">3</label>
+                                            </div>
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_11_4" name="q_11" type="radio" value="4"> 
+                                              <label class="form-check-label question__label" for="q_11_4">4</label>
+                                            </div>
+                                        </div>
+                                      </div>
+                                       <div class="step">
+                                        <h4>Kementerian Agama RI memiliki kepastian jadwal layanan?</h4>
+                                        <div class="form-check ps-0 q-box">
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_12_1" name="q_12" type="radio" value="1"> 
+                                              <label class="form-check-label question__label" for="q_12_1">1</label>
+                                            </div>
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_12_2" name="q_12" type="radio" value="2"> 
+                                              <label class="form-check-label question__label" for="q_12_2">2</label>
+                                            </div>
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_12_3" name="q_12" type="radio" value="3"> 
+                                              <label class="form-check-label question__label" for="q_12_3">3</label>
+                                            </div>
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_12_4" name="q_12" type="radio" value="4"> 
+                                              <label class="form-check-label question__label" for="q_12_4">4</label>
+                                            </div>
+                                        </div>
+                                      </div>
+                                       <div class="step">
+                                        <h4>Kementerian Agama RI memiliki lingkungan pelayanan yang nyaman?</h4>
+                                        <div class="form-check ps-0 q-box">
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_13_1" name="q_13" type="radio" value="1"> 
+                                              <label class="form-check-label question__label" for="q_13_1">1</label>
+                                            </div>
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_13_2" name="q_13" type="radio" value="2"> 
+                                              <label class="form-check-label question__label" for="q_13_2">2</label>
+                                            </div>
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_13_3" name="q_13" type="radio" value="3"> 
+                                              <label class="form-check-label question__label" for="q_13_3">3</label>
+                                            </div>
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_13_4" name="q_13" type="radio" value="4"> 
+                                              <label class="form-check-label question__label" for="q_13_4">4</label>
+                                            </div>
+                                        </div>
+                                      </div>
+                                       <div class="step">
+                                        <h4>Kementerian Agama RI memiliki lingkungan yang aman dan mendukung pemberian pelayanan informasi publik?</h4>
+                                        <div class="form-check ps-0 q-box">
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_14_1" name="q_14" type="radio" value="1"> 
+                                              <label class="form-check-label question__label" for="q_14_1">1</label>
+                                            </div>
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_14_2" name="q_14" type="radio" value="2"> 
+                                              <label class="form-check-label question__label" for="q_14_2">2</label>
+                                            </div>
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_14_3" name="q_14" type="radio" value="3"> 
+                                              <label class="form-check-label question__label" for="q_14_3">3</label>
+                                            </div>
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_14_4" name="q_14" type="radio" value="4"> 
+                                              <label class="form-check-label question__label" for="q_14_4">4</label>
+                                            </div>
+                                        </div>
+                                      </div>
+                                       <div class="step">
+                                        <h4>Kementerian Agama RI membuka jalur pengaduan dan saran yang berfungsi baik serta melakukan tindaklanjut atas pengaduan dan saran terkait dengan layanannya?</h4>
+                                        <div class="form-check ps-0 q-box">
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_15_1" name="q_15" type="radio" value="1"> 
+                                              <label class="form-check-label question__label" for="q_15_1">1</label>
+                                            </div>
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_15_2" name="q_15" type="radio" value="2"> 
+                                              <label class="form-check-label question__label" for="q_15_2">2</label>
+                                            </div>
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_15_3" name="q_15" type="radio" value="3"> 
+                                              <label class="form-check-label question__label" for="q_15_3">3</label>
+                                            </div>
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_15_4" name="q_15" type="radio" value="4"> 
+                                              <label class="form-check-label question__label" for="q_15_4">4</label>
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="step">
+                                        <h4>Layanan informasi publik Kementerian Agama RI didukung dengan sarana dan prasarana (termasuk teknologi informasi) yang baik dan memadai?</h4>
+                                        <div class="form-check ps-0 q-box">
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_16_1" name="q_16" type="radio" value="1"> 
+                                              <label class="form-check-label question__label" for="q_16_1">1</label>
+                                            </div>
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_16_2" name="q_16" type="radio" value="2"> 
+                                              <label class="form-check-label question__label" for="q_16_2">2</label>
+                                            </div>
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_16_3" name="q_16" type="radio" value="3"> 
+                                              <label class="form-check-label question__label" for="q_16_3">3</label>
+                                            </div>
+                                            <div class="q-box__question mb-2">
+                                              <input class="form-check-input question__input" id="q_16_4" name="q_16" type="radio" value="4"> 
+                                              <label class="form-check-label question__label" for="q_16_4">4</label>
+                                            </div>
+                                        </div>
+                                      </div>
+
+                                      <!-- MULTIPLE CHOICE -->
+                                      <!-- <div class="step">
+                                        <h4>Are you experiencing any of these serious symptoms of COVID-19 below?</h4>
+                                        <div class="row">
+                                            <div class="form-check ps-0 q-box">
+                                              <div class="q-box__question">
+                                                  <input class="form-check-input question__input" id="q_5_breathing" name="q_5_breathing" type="checkbox" value="breathing"> 
+                                                  <label class="form-check-label question__label" for="q_5_breathing">Difficulty breathing or shortness of breath</label>
+                                              </div>
+                                            </div>
+                                            <div class="form-check ps-0 q-box">
+                                              <div class="q-box__question">
+                                                  <input class="form-check-input question__input" id="q_5_chest" name="q_5_chest" type="checkbox" value="chest pain"> 
+                                                  <label class="form-check-label question__label" for="q_5_chest">Chest pain or pressure</label>
+                                              </div>
+                                            </div>
+                                            <div class="form-check ps-0 q-box">
+                                              <div class="q-box__question">
+                                                  <input class="form-check-input question__input" id="q_5_speech" name="q_5_speech" type="checkbox" value="speech problem"> 
+                                                  <label class="form-check-label question__label" for="q_5_speech">Loss of speech or movement</label>
+                                              </div>
+                                            </div>
+                                            <div class="form-check ps-0 q-box">
+                                              <div class="q-box__question">
+                                                  <input class="form-check-input question__input" id="q_5_pale" name="q_5_pale" type="checkbox" value="pale"> 
+                                                  <label class="form-check-label question__label" for="q_5_pale">Pale, gray or blue-colored skin, lips or nail beds</label>
+                                              </div>
+                                            </div>
+                                        </div>
+                                      </div> -->
+                                      <div class="step">
+                                        <div class="mt-1">
+                                            <div class="text-center">
+                                              <h4>Terima Kasih!</h4>
+                                              <p>Anda sudah berhasil memberikan penilaian terhadap kami.</p>
+                                              <p>Klik tombol submit untuk melanjutkan.</p>
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div id="success">
+                                        <div class="mt-5 text-center">
+                                            <h4>Sukses! Anda berhasil submit data penilaian anda!</h4>
+                                            <p>Partisipasi anda dalam memberikan penilaian sangat berharga untuk pelayanan kami, agar kami dapat selalu berbenah.</p>
+                                            <a class="back-link" href="">Kembali ke pertanyaan awal ➜</a>
+                                        </div>
+                                      </div>
+                                  </div>
+                                  <div id="q-box__buttons">
+                                      <button id="prev-btn" type="button">Sebelumnya</button> 
+                                      <button id="next-btn" type="button">Selanjutnya</button> 
+                                      <button id="submit-btn" type="submit">Kirim</button>
+                                  </div>
+                                </form>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <!-- <div id="preloader-wrapper">
+                      <div id="preloader"></div>
+                      <div class="preloader-section section-left"></div>
+                      <div class="preloader-section section-right"></div>
+                    </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Permintaan Informasi Section -->
     </main>
 
     <footer id="footer" class="footer light-background">
@@ -630,7 +1223,7 @@
     ></a>
 
     <!-- Preloader -->
-    <div id="preloader"></div>
+    <!-- <div id="preloader"></div> -->
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
