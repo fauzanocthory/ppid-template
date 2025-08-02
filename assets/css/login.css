@@ -716,7 +716,7 @@ section,
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
-  padding-top: 150px;
+  padding-top: 50px;
   position: relative;
   background-color: var(--background-color);
   overflow: hidden;
@@ -823,7 +823,7 @@ section,
 }
 
 .hero .hero-image img {
-  width: 100%;
+  width: auto;
   height: auto;
   border-radius: 10px;
   transition: transform 0.5s ease;
@@ -1292,7 +1292,7 @@ section,
 # Consultation Section
 --------------------------------------------------------------*/
 .consultation {
-  padding-top: 60px;
+  padding-top: 0px;
   padding-bottom: 60px;
 }
 

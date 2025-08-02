@@ -80,7 +80,7 @@
           <div class="sb-sidenav-menu">
             <div class="nav">
               <div class="sb-sidenav-menu-heading">Navigasi</div>
-              <a class="nav-link active" href="index.html">
+              <a class="nav-link" href="index.html">
                 <div class="sb-nav-link-icon">
                   <i class="fas fa-tachometer-alt"></i>
                 </div>
@@ -97,7 +97,7 @@
                   <i class="fa-solid fa-file"></i>
                 </div>
                 Daftar Permintaan Informasi </a
-              ><a class="nav-link" href="surveyKepuasan.html">
+              ><a class="nav-link active" href="surveyKepuasan.html">
                 <div class="sb-nav-link-icon">
                   <i class="fa-solid fa-comment"></i>
                 </div>
@@ -178,127 +178,62 @@
       <div id="layoutSidenav_content">
         <main>
           <div class="container-fluid px-4">
-            <h1 class="mt-4">Dashboard</h1>
+            <h1 class="mt-4">Daftar Survey Kepuasan Masyarakat Yang Masuk</h1>
             <ol class="breadcrumb mb-4">
-              <li class="breadcrumb-item active">Dashboard</li>
+              <li class="breadcrumb-item">
+                <a href="index.html">Dashboard</a>
+              </li>
+              <li class="breadcrumb-item active">Survey Kepuasan</li>
             </ol>
-            <div class="row">
-              <div class="col-xl-3 col-md-6">
-                <div class="card bg-primary text-white mb-4">
-                  <div class="card-body">Total Permintaan Informasi Masuk</div>
-                  <div
-                    class="card-footer d-flex align-items-center justify-content-between"
-                  >
-                    <h1>15</h1>
-                    <div class="small text-white">
-                      <i class="fa-solid fa-list"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-md-6">
-                <div class="card bg-warning text-white mb-4">
-                  <div class="card-body">Total Pengisian Survey Kepuasan</div>
-                  <div
-                    class="card-footer d-flex align-items-center justify-content-between"
-                  >
-                    <h1>15</h1>
-                    <div class="small text-white">
-                      <i class="fa-solid fa-list"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-md-6">
-                <div class="card bg-success text-white mb-4">
-                  <div class="card-body">
-                    Total Informasi Tersedia Setiap Saat
-                  </div>
-                  <div
-                    class="card-footer d-flex align-items-center justify-content-between"
-                  >
-                    <h1>15</h1>
-                    <div class="small text-white">
-                      <i class="fa-solid fa-list"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-md-6">
-                <div class="card bg-danger text-white mb-4">
-                  <div class="card-body">Total Informasi Berkala</div>
-                  <div
-                    class="card-footer d-flex align-items-center justify-content-between"
-                  >
-                    <h1>15</h1>
-                    <div class="small text-white">
-                      <i class="fa-solid fa-list"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xl-6">
-                <div class="card mb-4">
-                  <div class="card-header">
-                    <i class="fas fa-chart-area me-1"></i>
-                    Chart Kepuasan Masyarakat
-                  </div>
-                  <div class="card-body">
-                    <canvas id="myAreaChart" width="100%" height="40"></canvas>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-6">
-                <div class="card mb-4">
-                  <div class="card-header">
-                    <i class="fas fa-chart-bar me-1"></i>
-                    Bar Chart Permintaaan Informasi
-                  </div>
-                  <div class="card-body">
-                    <canvas id="myBarChart" width="100%" height="40"></canvas>
-                  </div>
-                </div>
+            <div class="card mb-4">
+              <div class="card-body">
+                Pada halaman ini terdapat daftar survey kepuasan yang masuk ke
+                PPID di Kanwil Kemenag Provinsi Riau.
               </div>
             </div>
             <div class="card mb-4">
               <div class="card-header">
                 <i class="fas fa-table me-1"></i>
-                Anggota PPID Kanwil Kemenag Provinsi Riau
+                Daftar Survey Kepuasan Masyarakat Yang Masuk
               </div>
               <div class="card-body">
                 <table id="datatablesSimple">
                   <thead>
                     <tr>
                       <th>Nama</th>
-                      <th>Jabatan</th>
-                      <th>Unit Kerja</th>
-                      <th>Umur</th>
-                      <th>Mulai Bekerja</th>
-                      <th>Ganteng?</th>
+                      <th>Usia</th>
+                      <th>Pekerjaan</th>
+                      <th>Jenis Kelamin</th>
+                      <th>Nilai 1 / Tidak Setuju</th>
+                      <th>Nilai 2 / Kurang Setuju</th>
+                      <th>Nilai 3 / Setuju</th>
+                      <th>Nilai 4 / Sangat Setuju</th>
                       <th>Aksi</th>
                     </tr>
                   </thead>
                   <tfoot>
                     <tr>
                       <th>Nama</th>
-                      <th>Jabatan</th>
-                      <th>Unit Kerja</th>
-                      <th>Umur</th>
-                      <th>Mulai Bekerja</th>
-                      <th>Ganteng?</th>
+                      <th>Usia</th>
+                      <th>Pekerjaan</th>
+                      <th>Jenis Kelamin</th>
+                      <th>Nilai 1 / Tidak Setuju</th>
+                      <th>Nilai 2 / Kurang Setuju</th>
+                      <th>Nilai 3 / Setuju</th>
+                      <th>Nilai 4 / Sangat Setuju</th>
                       <th>Aksi</th>
                     </tr>
                   </tfoot>
                   <tbody>
                     <tr>
-                      <td>Rendra</td>
-                      <td>Pranata Komputer Ahli Pertama</td>
-                      <td>Humas</td>
-                      <td>40</td>
-                      <td>2025/05/02</td>
-                      <td>Tidak</td>
+                      <td>Zaenab</td>
+                      <td>25 Tahun</td>
+                      <td>PNS</td>
+                      <td>Perempuan</td>
+                      <td>5</td>
+                      <td>2</td>
+                      <td>5</td>
+                      <td>4</td>
                       <td>
                         <button class="btn btn-warning">
                           <i class="fa-solid fa-pen-to-square"></i>
@@ -309,12 +244,14 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>Bayu</td>
-                      <td>Pranata Komputer Ahli Pertama</td>
-                      <td>Urais</td>
-                      <td>40</td>
-                      <td>2025/05/02</td>
-                      <td>Tidak</td>
+                      <td>Zaenab</td>
+                      <td>25 Tahun</td>
+                      <td>PNS</td>
+                      <td>Perempuan</td>
+                      <td>5</td>
+                      <td>2</td>
+                      <td>5</td>
+                      <td>4</td>
                       <td>
                         <button class="btn btn-warning">
                           <i class="fa-solid fa-pen-to-square"></i>
@@ -325,12 +262,14 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>Norman</td>
-                      <td>Pranata Komputer Ahli Pertama</td>
-                      <td>PTSP</td>
-                      <td>40</td>
-                      <td>2025/05/02</td>
-                      <td>Tidak</td>
+                      <td>Zaenab</td>
+                      <td>25 Tahun</td>
+                      <td>PNS</td>
+                      <td>Perempuan</td>
+                      <td>5</td>
+                      <td>2</td>
+                      <td>5</td>
+                      <td>4</td>
                       <td>
                         <button class="btn btn-warning">
                           <i class="fa-solid fa-pen-to-square"></i>
@@ -341,12 +280,14 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>Taufiq</td>
-                      <td>Pranata Komputer Ahli Pertama</td>
-                      <td>Perencanaan</td>
-                      <td>40</td>
-                      <td>2025/05/02</td>
-                      <td>Tidak</td>
+                      <td>Zaenab</td>
+                      <td>25 Tahun</td>
+                      <td>PNS</td>
+                      <td>Perempuan</td>
+                      <td>5</td>
+                      <td>2</td>
+                      <td>5</td>
+                      <td>4</td>
                       <td>
                         <button class="btn btn-warning">
                           <i class="fa-solid fa-pen-to-square"></i>
@@ -357,12 +298,14 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>Fauzan</td>
-                      <td>Pranata Komputer Ahli Pertama</td>
-                      <td>PHU</td>
-                      <td>27</td>
-                      <td>2025/05/02</td>
-                      <td>Ya</td>
+                      <td>Zaenab</td>
+                      <td>25 Tahun</td>
+                      <td>PNS</td>
+                      <td>Perempuan</td>
+                      <td>5</td>
+                      <td>2</td>
+                      <td>5</td>
+                      <td>4</td>
                       <td>
                         <button class="btn btn-warning">
                           <i class="fa-solid fa-pen-to-square"></i>
@@ -373,12 +316,14 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>Ezza</td>
-                      <td>Pranata Komputer Ahli Pertama</td>
-                      <td>PAPKIS</td>
-                      <td>40</td>
-                      <td>2025/05/02</td>
-                      <td>Tidak</td>
+                      <td>Zaenab</td>
+                      <td>25 Tahun</td>
+                      <td>PNS</td>
+                      <td>Perempuan</td>
+                      <td>5</td>
+                      <td>2</td>
+                      <td>5</td>
+                      <td>4</td>
                       <td>
                         <button class="btn btn-warning">
                           <i class="fa-solid fa-pen-to-square"></i>
@@ -389,12 +334,14 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>Boni</td>
-                      <td>Pranata Komputer Ahli Pertama</td>
-                      <td>UP</td>
-                      <td>40</td>
-                      <td>2025/05/02</td>
-                      <td>Tidak</td>
+                      <td>Zaenab</td>
+                      <td>25 Tahun</td>
+                      <td>PNS</td>
+                      <td>Perempuan</td>
+                      <td>5</td>
+                      <td>2</td>
+                      <td>5</td>
+                      <td>4</td>
                       <td>
                         <button class="btn btn-warning">
                           <i class="fa-solid fa-pen-to-square"></i>
@@ -405,12 +352,14 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>Eka</td>
-                      <td>Pranata Komputer Ahli Madya</td>
-                      <td>UP</td>
-                      <td>20</td>
-                      <td>2025/05/02</td>
-                      <td>Tidak</td>
+                      <td>Zaenab</td>
+                      <td>25 Tahun</td>
+                      <td>PNS</td>
+                      <td>Perempuan</td>
+                      <td>5</td>
+                      <td>2</td>
+                      <td>5</td>
+                      <td>4</td>
                       <td>
                         <button class="btn btn-warning">
                           <i class="fa-solid fa-pen-to-square"></i>
@@ -421,12 +370,14 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>Budi</td>
-                      <td>Pranata Komputer Ahli Madya</td>
-                      <td>UP</td>
-                      <td>20</td>
-                      <td>2025/05/02</td>
-                      <td>Tidak</td>
+                      <td>Zaenab</td>
+                      <td>25 Tahun</td>
+                      <td>PNS</td>
+                      <td>Perempuan</td>
+                      <td>5</td>
+                      <td>2</td>
+                      <td>5</td>
+                      <td>4</td>
                       <td>
                         <button class="btn btn-warning">
                           <i class="fa-solid fa-pen-to-square"></i>
@@ -437,12 +388,14 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>Zelvi</td>
-                      <td>Pranata Komputer Ahli Madya</td>
-                      <td>PHU</td>
-                      <td>20</td>
-                      <td>2025/05/02</td>
-                      <td>Tidak</td>
+                      <td>Zaenab</td>
+                      <td>25 Tahun</td>
+                      <td>PNS</td>
+                      <td>Perempuan</td>
+                      <td>5</td>
+                      <td>2</td>
+                      <td>5</td>
+                      <td>4</td>
                       <td>
                         <button class="btn btn-warning">
                           <i class="fa-solid fa-pen-to-square"></i>
@@ -453,12 +406,14 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>Ana</td>
-                      <td>Pranata Komputer Ahli Madya</td>
-                      <td>UP</td>
-                      <td>20</td>
-                      <td>2025/05/02</td>
-                      <td>Tidak</td>
+                      <td>Zaenab</td>
+                      <td>25 Tahun</td>
+                      <td>PNS</td>
+                      <td>Perempuan</td>
+                      <td>5</td>
+                      <td>2</td>
+                      <td>5</td>
+                      <td>4</td>
                       <td>
                         <button class="btn btn-warning">
                           <i class="fa-solid fa-pen-to-square"></i>

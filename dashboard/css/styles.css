@@ -3901,7 +3901,7 @@ textarea.form-control-lg {
   .navbar-expand-sm .offcanvas {
     position: static;
     z-index: auto;
-    flex-grow: 1;
+    flex-grow: 2;
     width: auto !important;
     height: auto !important;
     visibility: visible !important;
